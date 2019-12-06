@@ -8,7 +8,7 @@
 
 class ParentClass
 {
-    static $ErrorCode = 0;
+    static $ErrorCode = "";
     public static function getErrorCode()
     {
         return self::$ErrorCode;

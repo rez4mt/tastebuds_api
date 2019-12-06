@@ -9,8 +9,8 @@
 class Config{
     /* @var array*/
     const DB = [
-        'name'=>'',
-        'username'=>'',
+        'name'=>'tastebuds',
+        'username'=>'root',
         'password'=>'',
         'config'=>[
             PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC,
@@ -24,7 +24,7 @@ class Config{
     public static $DB = null;
     /* @var array*/
     const SITE = [
-        'base_url'=>'/s/Base',
+        'base_url'=>'/s/tastebuds',
         'route'=>[
 
         ]

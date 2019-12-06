@@ -9,7 +9,7 @@ class ImageModule
 {
     public static function getImage($id)
     {
-        $sql = "SELECT data FROM images WHERE id = ?";
+        $sql = "SELECT data FROM image WHERE id = ?";
         $stmt = getConn()->prepare($sql);
         if(!$stmt->execute([$id]) || !$stmt->rowCount())
             return false;

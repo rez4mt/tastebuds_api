@@ -1,5 +1,5 @@
 Options -Indexes
 
 RewriteEngine On
-RewriteBase /s/Base
+RewriteBase /s/tastebuds
 RewriteRule .* index.php [L]

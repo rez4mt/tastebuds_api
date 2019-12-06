@@ -76,13 +76,13 @@ function output($status,$data)
         'status' => $status
     ];
 
-    if(isset($data['message']))
+    if(gettype($data) == "array" && isset($data['message']))
     {
         if(Errors::exists($data['message']))
             $output_data['message'] = Errors::getErrorMsg($data['message']);
         else
             $output_data['message'] = $data['message'];
-    }else if(isset($data['payload']))
+    }else if(gettype($data) == "array" &&  isset($data['payload']))
         $output_data['payload'] = $data['payload'];
     else if($status == 'ok')
     {

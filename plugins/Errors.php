@@ -27,6 +27,6 @@ class Errors{
         if(isset(self::$_Errors[$error]))
             return self::$_Errors[$error];
         else
-            return self::$_Errors['unk'];
+            return $error;
     }
 }

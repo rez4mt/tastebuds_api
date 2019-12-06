@@ -8,8 +8,9 @@
 
 class ImageController
 {
-    public function get($id,$as_img = false)
+    public function get($id,$as_img = true)
     {
+
         if(!$id)
         {
             output('error',['message'=>'2']);
@@ -21,6 +22,7 @@ class ImageController
             //show the image
             if($as_img)
             {
+                header('Content-Type:image/png');
                 echo $image;
                 die;
             }
