@@ -1,0 +1,5 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /s/Base
+RewriteRule .* index.php [L]
